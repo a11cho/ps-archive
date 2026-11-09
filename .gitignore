@@ -1,0 +1,21 @@
+# Ignore everything by default, including executables without extensions.
+*
+
+# Traverse directories so source files can be found at any depth.
+!*/
+
+# Track this configuration and C source/header files only.
+!/.gitignore
+!*.[cChH]
+
+# Exclude build output and editor/cache directories, even if they contain C files.
+build/
+bin/
+obj/
+out/
+.vs/
+.vscode/
+.idea/
+.cache/
+
+# To add another language later, add its extension, e.g. !*.py
