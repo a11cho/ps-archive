@@ -4,11 +4,21 @@
 # Traverse directories so source files can be found at any depth.
 !*/
 
-# Track this configuration and C source/header files only.
+# Track this configuration and C/C++ source/header files only.
 !/.gitignore
+
+# C
 !*.[cChH]
 
-# Exclude build output and editor/cache directories, even if they contain C files.
+# C++
+!*.cpp
+!*.hpp
+!*.cc
+!*.cxx
+!*.hh
+!*.hxx
+
+# Exclude build output and editor/cache directories.
 build/
 bin/
 obj/
@@ -17,5 +27,3 @@ out/
 .vscode/
 .idea/
 .cache/
-
-# To add another language later, add its extension, e.g. !*.py
